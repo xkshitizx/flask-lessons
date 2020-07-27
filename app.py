@@ -41,7 +41,7 @@ def query():
 #request form data
 @app.route('/theform')
 def theform():
-	return render_template('form.html')
+	return render_template('form.html', title="Register")
 @app.route('/process', methods=["POST"])
 def process():
 	name=request.form['name']
