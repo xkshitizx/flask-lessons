@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	<h1>Hello {{name.title()}}. Welcome!!!</h1>
+	{% if display %}
+		<h2>The picture is being displayed</h2>
+	{% else %}
+		<h2>Not displayed</h2>
+	{% endif %}
+
+	{% for li in list %}
+		<p>{{ li }}</p>
+	{% endfor %}
+
+	{% for key,value in dict.items() %}
+		<h3><i>{{key}}</i>: <u>{{value}}</u></h3>
+	{% endfor %}
+</body>
+</html>
